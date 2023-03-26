@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Tailwind Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="text-center my-5">
+        <h1 class="text-5xl font-semibold text-red-900">BIG BOY CALCULATOR</h1>
+    </header>
+    <main class="flex justify-center">
+        <section class="bg-neutral-900 text-center w-3/4 my-5 py-5">
+            <input id="input-field" class="w-3/4 mt-10 mb-12 text-right p-5" type="text">
+            <div id="calc" class="flex justify-center w-3/4 mb-12 inline-grid grid-cols-4 gap-2">
+                <button id="btn-clear" class="bg-green-400 py-5 font-semibold">AC</button>
+                <div>
+                    <button id="btn-bracket1" class="bg-sky-600 py-5 font-semibold px-12">(</button>
+                    <button id="btn-bracket2" class="bg-sky-600 py-5 font-semibold px-12">)</button>
+                </div>
+                <button id="btn-percentage" class="bg-sky-600 py-5 font-semibold" value="/100">%</button>
+                <button id="btn-divide" class="bg-sky-600 py-5 font-semibold">/</button>
+                <button id="btn-seven" class="text-white bg-neutral-700 py-5 font-semibold">7</button>
+                <button id="btn-eight" class="text-white bg-neutral-700 py-5 font-semibold">8</button>
+                <button id="btn-nine" class="text-white bg-neutral-700 py-5 font-semibold">9</button>
+                <button id="btn-multiply" class="bg-sky-600 py-5 font-semibold">*</button>
+                <button id="btn-four" class="text-white bg-neutral-700 py-5 font-semibold">4</button>
+                <button id="btn-five" class="text-white bg-neutral-700 py-5 font-semibold">5</button>
+                <button id="btn-six" class="text-white bg-neutral-700 py-5 font-semibold">6</button>
+                <button id="btn-substract" class="bg-sky-600 py-5 font-semibold">-</button>
+                <button id="btn-one" class="text-white bg-neutral-700 py-5 font-semibold">1</button>
+                <button id="btn-two" class="text-white bg-neutral-700 py-5 font-semibold">2</button>
+                <button id="btn-three" class="text-white bg-neutral-700 py-5 font-semibold">3</button>
+                <button id="btn-addition" class="bg-sky-600 py-5 font-semibold">+</button>
+                <button id="btn-zero" class="text-white bg-neutral-700 py-5 font-semibold">0</button>
+                <button id="btn-dot" class="text-white bg-neutral-700 py-5 font-semibold">.</button>
+                <button id="btn-back" class="text-white bg-neutral-700 py-5 font-semibold">&lt;</button>
+                <button id="btn-equal" class="bg-blue-200 py-5 font-semibold">=</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS Link -->
+    <script src="JS/operations.js"></script>
+    <script src="JS/buttons.js"></script>
+</body>
+
+</html>
